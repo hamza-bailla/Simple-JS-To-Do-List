@@ -1,0 +1,123 @@
+/* --- Global Reset and Body Styling --- */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f6; /* Light, soft background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    border-bottom: 3px solid #66bb6a; /* Green underline for emphasis */
+    padding-bottom: 5px;
+}
+
+/* --- Input and Button Container --- */
+div {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#tache {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+#tache:focus {
+    border-color: #66bb6a; /* Highlight input on focus */
+    outline: none;
+}
+
+#ajouBtn {
+    padding: 10px 20px;
+    background-color: #66bb6a; /* Main action color (Green) */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#ajouBtn:hover {
+    background-color: #55a255;
+}
+
+#ajouBtn:active {
+    transform: scale(0.98);
+}
+
+/* --- Task List Styling --- */
+#taskList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Styling for each list item (task) */
+#taskList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1.1em;
+    color: #333;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* --- 'Done' Task Styling --- */
+#taskList li.done {
+    text-decoration: line-through;
+    color: #999; /* Faded color for completed tasks */
+    background-color: #e0f2f1; /* Very light, distinguished background */
+    border-left: 5px solid #66bb6a; /* Green bar to indicate completion */
+    opacity: 0.8;
+}
+
+/* --- 'Done' Button Styling --- */
+#taskList li button {
+    margin-left: 15px;
+    padding: 6px 12px;
+    background-color: #2196f3; /* Blue for "Done" button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+#taskList li.done button {
+    background-color: #ccc; /* Grey out the button if task is done */
+}
+
+#taskList li button:hover {
+    background-color: #1976d2;
+}
+
+#taskList li.done button:hover {
+    background-color: #b0b0b0; 
+}
