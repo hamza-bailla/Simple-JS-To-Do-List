@@ -32,4 +32,5 @@ This project focuses on **DOM manipulation**, **event handling**, and **clean co
 
 ---
 
-## 🛠 Project Structure
+##  Project Structure
+├── index.html # Main application structure ├── todo.js # JavaScript logic for task management ├── styles.css # Styling for the application └── README.md # Project description and documentation
